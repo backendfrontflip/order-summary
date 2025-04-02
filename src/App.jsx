@@ -23,8 +23,8 @@ function App() {
             <div className="flex items-center gap-4">
               <img src={`${baseUrl}images/icon-music.svg`} alt="Music Icon" className="w-10" />
               <div className="text-left">
-                <p className="font-bold">Annual Plan</p>
-                <p className="text-gray-400 text-sm">$59.99/year</p>
+                <p className="font-bold text-black">Annual Plan</p>
+                <p className="text-gray-400 text-sm line-through">$59.99/year</p>
               </div>
             </div>
             <button className="text-blue-600 underline font-semibold hover:text-blue-800">
