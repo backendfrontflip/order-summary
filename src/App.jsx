@@ -2,12 +2,14 @@ import React from 'react';
 import './App.css';
 
 function App() {
+  const baseUrl = import.meta.env.BASE_URL; // Ensure correct image paths
+
   return (
     <>
       <div className="flex flex-col items-center justify-center min-h-screen">
         <div className="bg-white shadow-lg rounded-lg overflow-hidden max-w-sm w-full text-center">
           <div>
-            <img src="/images/illustration-hero.svg" alt="Illustration Hero" className="w-full" />
+            <img src={`${baseUrl}images/illustration-hero.svg`} alt="Illustration Hero" className="w-full" />
           </div>
 
           <h1 className="font-bold text-2xl mt-4">Order Summary</h1>
@@ -19,10 +21,10 @@ function App() {
 
           <div className="flex items-center bg-gray-200 m-6 p-4 rounded-lg justify-between">
             <div className="flex items-center gap-4">
-              <img src="/images/icon-music.svg" alt="Music Icon" className="w-10" />
+              <img src={`${baseUrl}images/icon-music.svg`} alt="Music Icon" className="w-10" />
               <div className="text-left">
                 <p className="font-bold">Annual Plan</p>
-                <p className="text-gray-400 text-sm line-through">$59.99/year</p>
+                <p className="text-gray-400 text-sm">$59.99/year</p>
               </div>
             </div>
             <button className="text-blue-600 underline font-semibold hover:text-blue-800">
